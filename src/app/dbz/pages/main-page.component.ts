@@ -19,4 +19,12 @@ export class MainPageComponent  {
     power: 7500
   }];
 
+  onNewCharacter( character: Character): void{
+    this.characters.push(character);
+  }
+
+  onDeleteCharacter (index:number){
+    this.characters.splice(index,1);
+  }
+
 }
